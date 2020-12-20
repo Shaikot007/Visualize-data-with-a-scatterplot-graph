@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualize data with a scatterplot graph</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="title">
+    <h1>Doping in Professional Bicycle Racing</h1>
+    <h4>35 Fastest times up Alpe d'Huez</h4>
+  </header>
+  <div class="svg-container">
+    <svg class="svg-content" viewBox="0 0 800 500" preserveAspectRatio="none">
+      <text class="text" x="350" y="300" transform="translate(-220, 600) rotate(-90)">Time in minutes</text>
+      <text id="legend" x="560" y="95">No doping allegations</text>
+      <rect x="715" y="80" rx="2" ry="2" width="20" height="20" style="fill:rgb(255, 140, 0);" />
+      <text id="legend" x="503" y="125">Riders with doping allegations</text>
+      <rect x="715" y="110" rx="2" ry="2" width="20" height="20" style="fill:rgb(31, 119, 180);" />
+    </svg>
+  </div>
+  <footer>
+    <p>Made by <a href="https://github.com/Shaikot007" target="_blank" rel="noopener noreferrer">Shaikot</a></p>
+  </footer>
+</body>
+
+<script defer src="./script.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
